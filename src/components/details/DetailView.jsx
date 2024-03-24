@@ -121,7 +121,7 @@ const DetailView=()=>{
                     <Typography style={{marginLeft:"auto"}}>{new Date(post.createdDate).toDateString()}</Typography>
                </Author>
 
-               <pre><Description>{post.description}</Description></pre>
+               <pre style={{whiteSpace:'pre-wrap'}}><Description>{post.description}</Description></pre>
                <Comments post={post}/>
           </Container>
           
