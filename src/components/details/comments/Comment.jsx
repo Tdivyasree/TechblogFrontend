@@ -50,7 +50,7 @@ const Comment=({comment,setToggle})=>{
                     {comment.name===account.username && <DeleteIcon onClick={()=>removeComment()}/>}
                </Container>
                <Box>
-                    <Typography>{comment.comments}</Typography>
+                    <pre><Typography>{comment.comments}</Typography></pre>
                </Box>
           </Component>
      )
